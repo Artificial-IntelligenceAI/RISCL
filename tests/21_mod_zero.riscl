@@ -1,0 +1,5 @@
+%% { % by 0 is a divide fault too, even with a number }
+$a = 0 + 66; !'$a;
+$b = 7 % 0;
+!'$a;
+#0;

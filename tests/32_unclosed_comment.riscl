@@ -1,0 +1,3 @@
+%% { a comment with no closing brace runs to the end of the file, taking the exit with it }
+$a = 0 + 65; !'$a;
+%% no brace here, so this is still a comment: #0;

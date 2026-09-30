@@ -1,0 +1,13 @@
+%% { reading numbers: negatives, a lone '-', a stop byte that is eaten, 64-bit wrap, the end }
+$h = 0 + 10;
+?$a; !$a; !'$h;
+?$a; !$a; !'$h;
+?$a; !$a; !'$h;
+?$a; !$a; !'$h;
+?$a; !$a; !'$h;
+?$a; !$a; !'$h;
+?$a; !$a; !'$h;
+?$a; !$a; !'$h;
+?$a; !$a; !'$h;
+?$a; !$a; !'$h;
+#0;

@@ -1,0 +1,11 @@
+%% { memory is bytes, little-endian, and writes may overlap and be unaligned }
+$h = 0 + 10;
+[100] = 0x0807060504030201;
+[101] = 0xff;
+$a = [100]; !$a; !'$h;
+$a = [104]; !$a; !'$h;
+$a = [1048560]; !$a; !'$h;
+[1048568] = 0xffffffffffffffff;
+$a = [1048561]; !$a; !'$h;
+$a = [500000]; !$a; !'$h;
+#0;

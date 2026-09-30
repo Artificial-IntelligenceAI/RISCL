@@ -1,0 +1,4 @@
+%% { calling too deep runs out of stack }
+$a = 0 + 65; !'$a;
+@0x1
+>> @0x1;

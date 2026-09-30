@@ -1,0 +1,5 @@
+%% { a call to a label that does not exist }
+$a = 0 + 65; !'$a;
+>> @0x77;
+!'$a;
+#0;

@@ -1,0 +1,9 @@
+%% { printing and reading leave every other register alone }
+$a = 0 + 1; $b = 0 + 2; $c = 0 + 3; $d = 0 + 4;
+$e = 0 + 5; $f = 0 + 6; $g = 0 + 7; $h = 0 + 32;
+!$a; !'$h; ?$h; !$h; $h = 0 + 32; !'$h;
+!$a; !$b; !$c; !$d; !$e; !$f; !$g; !'$h;
+%% { and each register is its own }
+$d = $d * 1000; $a = $d + $g; !$a; !'$h; !$d;
+$h = 0 + 10; !'$h;
+#0;

@@ -1,0 +1,9 @@
+%% { / and % truncate toward zero; the remainder takes the sign of the dividend }
+$h = 0 + 32; $g = 0 + 10;
+$a = 0 + 7;  $b = 0 + 2;  $c = $a / $b; !$c; !'$h; $c = $a % $b; !$c; !'$g;
+$a = 0 - 7;  $b = 0 + 2;  $c = $a / $b; !$c; !'$h; $c = $a % $b; !$c; !'$g;
+$a = 0 + 7;  $b = 0 - 2;  $c = $a / $b; !$c; !'$h; $c = $a % $b; !$c; !'$g;
+$a = 0 - 7;  $b = 0 - 2;  $c = $a / $b; !$c; !'$h; $c = $a % $b; !$c; !'$g;
+$a = 0x8000000000000000 + 0; $c = $a / 2; !$c; !'$h; $c = $a % 3; !$c; !'$g;
+$a = 0 + 5; $a = $a / $a; !$a; !'$g;
+#0;

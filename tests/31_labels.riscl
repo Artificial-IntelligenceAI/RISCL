@@ -1,0 +1,11 @@
+%% { labels are names in any order, up to 16 hex digits, and may sit anywhere between statements }
+@0xffffffffffffffff ?;
+@0x3 $a = 0 + 51; !'$a; @0x0 ?;
+@0x1 $a = 0 + 49; !'$a; @0x3 ?;
+@0xffffffffffffffff $a = 0 + 10; $b = 0 + 48; !'$b; @0x1 ?;
+@0x0
+!'$a;
+@0xdeadbeef ?;
+#1;
+@0xdeadbeef
+%% { a label after the last statement names falling off the end }

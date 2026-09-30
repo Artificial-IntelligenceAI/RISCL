@@ -1,0 +1,14 @@
+%% { a hundred thousand nested calls fit on the stack, and all come back }
+$a = 0 + 100000;
+>> @0x1;
+!$b;
+$h = 0 + 10; !'$h;
+#0;
+@0x1
+$a == 0 ? @0x2 : @0x3;
+@0x3
+$a = $a - 1;
+>> @0x1;
+$b = $b + 1;
+@0x2
+<<;

@@ -1,0 +1,11 @@
+%% { three thousand numbers, far more input than one read brings in: add them up }
+$b = 0 + 3000;
+@0x1
+?$a;
+$c = $c + $a;
+$b = $b - 1;
+$b > 0 ? @0x1 : @0x2;
+@0x2
+!$c;
+$h = 0 + 10; !'$h;
+#0;

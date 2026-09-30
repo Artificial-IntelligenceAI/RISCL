@@ -1,0 +1,6 @@
+%% { a negative address is outside memory }
+$a = 0 + 65; !'$a;
+$b = 0 - 8;
+[$b] = 1;
+!'$a;
+#0;
