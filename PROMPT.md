@@ -18,6 +18,16 @@ checked against a reference model of `SPEC.md`, so treat them as right; if one d
 `SPEC.md`, report it instead of editing it. Add tests of your own for anything you find the given
 ones miss, and a short section in `README.md` on how the compiler is built inside.
 
+Run `./run_tests.sh` as you build, not only at the end: each instruction you add should turn its
+tests green before you move on.
+
+Deliver the whole compiler, at the scope `SPEC.md` sets — don't quietly narrow, widen, or
+transform it. If you genuinely can't complete something, do the rest and state plainly what's
+missing and why.
+
+Subagents cost credits and re-read everything; do this work yourself, and use one only for a
+genuinely separate, sizeable job.
+
 Boundaries: follow `SPEC.md` exactly. Where it says "(default)" and a rule turns out to be
 unworkable, choose the closest workable rule and name it in your final report. Nothing outside
 this repository.
