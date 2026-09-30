@@ -1,3 +1,4 @@
 riscl
 *.o
 /tmp/
+build/
