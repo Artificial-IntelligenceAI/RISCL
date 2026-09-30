@@ -18,9 +18,6 @@ checked against a reference model of `SPEC.md`, so treat them as right; if one d
 `SPEC.md`, report it instead of editing it. Add tests of your own for anything you find the given
 ones miss, and a short section in `README.md` on how the compiler is built inside.
 
-Run `./run_tests.sh` as you build, not only at the end: each instruction you add should turn its
-tests green before you move on.
-
 Deliver the whole compiler, at the scope `SPEC.md` sets — don't quietly narrow, widen, or
 transform it. If you genuinely can't complete something, do the rest and state plainly what's
 missing and why.
@@ -32,8 +29,8 @@ Boundaries: follow `SPEC.md` exactly. Where it says "(default)" and a rule turns
 unworkable, choose the closest workable rule and name it in your final report. Nothing outside
 this repository.
 
-You are operating autonomously. The owner is not watching and cannot answer questions mid-task,
-so for anything reversible that follows from this request, proceed without asking. Commit as you
+You are operating autonomously. The owner is not watching: a question stalls the run until they
+come back, so for anything reversible that follows from this request, proceed without asking. Commit as you
 reach milestones and push your branch. Before ending, check your last paragraph: if it is a plan or
 a promise about work not yet done, do the work. End only when the tests pass, or when you are
 blocked on something only the owner can provide — and then say exactly what.
