@@ -7,7 +7,8 @@ The language is defined in `SPEC.md`. It is the contract: build exactly what it 
   out to be unworkable, say so in your final report rather than changing it silently.
 - The compiler is **C and x86-64 assembly only, with no C library of any kind** — no `#include` of
   a system or libc header. Its own `_start`; system calls from assembly. Built by `make` into
-  `./riscl` with `-nostdlib -nostdinc -ffreestanding -static`.
+  `./riscl` with `clang` — LLVM's development-branch nightly, which the environment installs —
+  and `-nostdlib -nostdinc -ffreestanding -static`.
 - The backend is **its own**: RISCL programs become x86-64 machine code and ELF files written by
   the compiler, with no assembler, linker or LLVM involved when a RISCL program is compiled.
 - Done means `./run_tests.sh` passes every test in `tests/`. Do not change a test's expected

@@ -165,7 +165,9 @@ using no library of any kind at run time — only Linux system calls.
   fucking pure C and ASM"), with **no C library at all, not even the
   standard one** (owner): no `#include` of any system or libc header, its
   own `_start`, and system calls made from assembly. Build it with
-  `-nostdlib -nostdinc -ffreestanding -static` (gcc or clang).
+  **Clang** from LLVM's development branch (owner: "unstable, for the love
+  of the game"; the environment's setup script installs it) and
+  `-nostdlib -nostdinc -ffreestanding -static`.
 - **Its backend is its own** (owner): it writes the x86-64 machine code
   and the ELF file itself — no LLVM, no assembler or linker at the time a
   RISCL program is compiled.
