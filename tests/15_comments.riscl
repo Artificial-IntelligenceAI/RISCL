@@ -1,0 +1,5 @@
+%% { a comment
+   over three
+   lines } $a = 0 + 1; %% { and one inside a line } !$a;
+%%{no spaces}$h = 0 + 10; !'$h;
+#0;

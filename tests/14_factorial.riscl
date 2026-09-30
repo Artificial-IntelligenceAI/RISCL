@@ -1,0 +1,21 @@
+%% { 10! by recursion, keeping each n on a stack the program builds itself in memory }
+$g = 0 + 0;
+$a = 0 + 10;
+>> @0xfac;
+!$b;
+$h = 0 + 10; !'$h;
+#0;
+@0xfac
+$a <= 1 ? @0xba5e : @0x5e1f;
+@0xba5e
+$b = 0 + 1;
+<<;
+@0x5e1f
+[$g] = $a;
+$g = $g + 8;
+$a = $a - 1;
+>> @0xfac;
+$g = $g - 8;
+$a = [$g];
+$b = $b * $a;
+<<;

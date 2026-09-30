@@ -1,0 +1,3 @@
+riscl
+*.o
+/tmp/

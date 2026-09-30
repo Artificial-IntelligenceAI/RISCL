@@ -1,0 +1,10 @@
+%% { read two numbers, print their sum }
+?$a;
+?$b;
+$c = $a + $b;
+!$c;
+$h = 0 + 10; !'$h;
+?$d;
+!$d;
+!'$h;
+#0;

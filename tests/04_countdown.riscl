@@ -1,0 +1,13 @@
+%% { 5 down to 1, then an always-jump past a trap }
+$a = 0 + 5;
+$h = 0 + 32;
+@0xa
+!$a; !'$h;
+$a = $a - 1;
+$a > 0 ? @0xa : @0xb;
+@0xb
+@0xc ?;
+this line is never reached so it never matters;
+@0xc
+$h = 0 + 10; !'$h;
+#0;

@@ -1,0 +1,27 @@
+%% { store 1..5 at addresses 0, 8, ..., then add them back up }
+$a = 0 + 1;
+$b = 0 + 0;
+@0x1
+[$b] = $a;
+$a = $a + 1;
+$b = $b + 8;
+$a <= 5 ? @0x1 : @0x2;
+@0x2
+$c = 0 + 0;
+$b = 0 + 0;
+@0x3
+$d = [$b];
+$c = $c + $d;
+$b = $b + 8;
+$b < 40 ? @0x3 : @0x4;
+@0x4
+!$c;
+$h = 0 + 32; !'$h;
+[1048568] = 7;
+$e = [1048568];
+!$e; !'$h;
+%% { an unaligned read: bytes 3 to 10, the top of 1 and the bottom of 2 }
+$e = [3];
+!$e;
+$h = 0 + 10; !'$h;
+#0;

@@ -1,0 +1,7 @@
+%% { a second @0x1 is a bad statement; jumps go to the first }
+@0x1 ?;
+#9;
+@0x1
+$a = 0 + 65; !'$a;
+@0x1
+#3;

@@ -1,0 +1,6 @@
+$a = 0x7fffffffffffffff + 1; !$a;
+$h = 0 + 10; !'$h;
+$a = 0xFF + 0x1; !$a; !'$h;
+$a = 0xffffffffffffffff + 0; !$a; !'$h;
+$a = 18446744073709551615 * 2; !$a; !'$h;
+#0;

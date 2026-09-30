@@ -1,0 +1,8 @@
+%% { the shortest program that says something }
+$a = 0 + 72;
+!'$a;
+$a = 0 + 105;
+!'$a;
+$a = 0 + 10;
+!'$a;
+#0;
