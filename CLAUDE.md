@@ -14,6 +14,13 @@ The language is defined in `SPEC.md`. It is the contract: build exactly what it 
 - Done means `./run_tests.sh` passes every test in `tests/`. Do not change a test's expected
   output to make it pass; if a test looks wrong against `SPEC.md`, say so in your report.
 
+## Releases
+
+- Releases are numbered **1, 2, 3, …** — the tag is the bare number (`1`, `2`), and each new release
+  is the last one plus 1 (owner). No `v`, no dots.
+- A release attaches `riscl`, a static x86-64 Linux binary built from the tagged commit, with its
+  SHA-256 in the notes, after `./run_tests.sh` passes with that build.
+
 ## Git
 
 - Author: `Tankun Sriket <tankunsriket63741ecff056.invalid>`.
